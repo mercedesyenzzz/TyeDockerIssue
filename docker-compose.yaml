@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  blazorwasm:
+    image: blazorwasm
+    build:
+      context: .
+      dockerfile: BlazorWasm/Dockerfile
+    ports:
+      - "8080:80"
+
+  aspnetwebapp:
+    image: aspnetwebapp
+    build:
+      context: .
+      dockerfile: AspNetWebApp/Dockerfile
+    ports:
+      - "8081:80"

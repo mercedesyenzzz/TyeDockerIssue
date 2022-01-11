@@ -1,0 +1,10 @@
+name: tyedockerissue
+services:
+- name: aspnetwebapp
+  project: AspNetWebApp/AspNetWebApp.csproj
+  dockerFile: AspnetWebApp/Dockerfile
+  dockerFileContext: .
+- name: blazorwasm
+  project: BlazorWasm/BlazorWasm.csproj
+  dockerFile: BlazorWasm/Dockerfile
+  dockerFileContext: .
